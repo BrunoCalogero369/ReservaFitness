@@ -131,7 +131,7 @@ export default function AdminDashboard({ adminEmail }: { adminEmail: string }) {
   return (
     <div className="p-4 max-w-2xl mx-auto pb-24">
       {/* HEADER DINÁMICO LIMPIO */}
-      <div className="flex justify-between items-center mb-10">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-10">
         <div>
           <p className="text-emerald-500 font-black text-[10px] tracking-[0.3em] uppercase mb-1">
             Admin Panel
@@ -142,16 +142,16 @@ export default function AdminDashboard({ adminEmail }: { adminEmail: string }) {
         </div>
         
         {/* NAVEGACIÓN TABS */}
-        <div className="flex bg-zinc-950 p-1 rounded-2xl border border-zinc-800 shadow-inner">
+        <div className="flex bg-zinc-950 p-1 rounded-2xl border border-zinc-800 shadow-inner w-full sm:w-auto">
           <button 
             onClick={() => setTab('agenda')}
-            className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase transition-all duration-300 ${tab === 'agenda' ? 'bg-emerald-500 text-black shadow-lg shadow-emerald-500/20' : 'text-zinc-600 hover:text-zinc-400'}`}
+            className={`flex-1 sm:flex-none px-6 py-2 rounded-xl text-[10px] font-black uppercase transition-all duration-300 ${tab === 'agenda' ? 'bg-emerald-500 text-black shadow-lg shadow-emerald-500/20' : 'text-zinc-600 hover:text-zinc-400'}`}
           >
             Turnos
           </button>
           <button 
             onClick={() => setTab('students')}
-            className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase transition-all duration-300 ${tab === 'students' ? 'bg-emerald-500 text-black shadow-lg shadow-emerald-500/20' : 'text-zinc-600 hover:text-zinc-400'}`}
+            className={`flex-1 sm:flex-none px-6 py-2 rounded-xl text-[10px] font-black uppercase transition-all duration-300 ${tab === 'students' ? 'bg-emerald-500 text-black shadow-lg shadow-emerald-500/20' : 'text-zinc-600 hover:text-zinc-400'}`}
           >
             Rutinas
           </button>
