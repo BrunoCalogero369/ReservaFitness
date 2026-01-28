@@ -1,7 +1,9 @@
 # ⚡ Booking App Profesional
 
 Plataforma de gestión de turnos **Full-Stack** optimizada para el sector Fitness/Salud, diseñada con un enfoque en alto rendimiento y estética *Premium Dark*.
+
 [![Deploy to Netlify](https://img.shields.io/badge/DEMO_EN_VIVO-00AD9F?style=for-the-badge&logo=netlify&logoColor=white)](https://reserva-conmigo.netlify.app/)
+
 ---
 
 ## 🎯 El Desafío
@@ -41,5 +43,3 @@ Desarrollo de una aplicación robusta con arquitectura de **flujo guiado (Step-b
 
 Desarrollado con ⚡ por **[Bruno Calogero]**
 
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
