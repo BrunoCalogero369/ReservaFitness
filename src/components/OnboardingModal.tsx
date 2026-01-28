@@ -8,7 +8,7 @@ export default function OnboardingModal({ userId, onComplete }: { userId: string
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (name.length < 3) return alert("Poné un nombre real, crack");
+    if (name.length < 3) return alert("Ingresa tu nombre real");
     
     setLoading(true);
     const { error } = await supabase.from('profiles').insert({ id: userId, full_name: name });
